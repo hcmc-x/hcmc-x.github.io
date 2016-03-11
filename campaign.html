@@ -23,8 +23,11 @@
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript">
 			function openURL(url){
-				window.location.href = url;
+				var win = window.open(url, '_blank');
+  				win.focus();
 			}
+			
+			setInterval(function(){ alert("Hello"); }, 3000);
 		</script>
 	</body>
 </html>
