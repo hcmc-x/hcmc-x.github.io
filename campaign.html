@@ -16,13 +16,15 @@
 		<h2>Install app to get bonus point</h2>
 		<table>
 			<tr>
-				<td><input type="button" value="Apple Store"></input></td>
-				<td><input type="button" value="Googleplay"></input></td>
+				<td><input type="button" value="Apple Store" onlick="openURL('https://itunes.apple.com/us/app/zingpoll/id1076238279')"></input></td>
+				<td><input type="button" value="Googleplay" onlick="openURL('https://play.google.com/store/apps/details?id=com.aavn.zingpoll')"></input></td>
 			</tr>
 		</table>
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript">
-			
+			function openURL(url){
+				alert(url);
+			}
 		</script>
 	</body>
 </html>
