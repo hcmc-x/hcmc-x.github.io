@@ -4,6 +4,7 @@
 		<meta property="og:image:type" content="image/jpeg" /> 
 		<meta property="og:image:width" content="400" /> 
 		<meta property="og:image:height" content="300" />
+		<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
 		
 		<style>
 			.body{
@@ -13,29 +14,10 @@
 		</style>
 	</head>
 	<body>
-		<h2>Install app to get bonus point</h2>
-		<table>
-			<tr>
-				<td><input type="button" value="Apple Store" onclick="openURL('https://itunes.apple.com/us/app/zingpoll/id1076238279')"></input></td>
-				<td><input type="button" value="Googleplay" onclick="openURL('https://play.google.com/store/apps/details?id=com.aavn.zingpoll')"></input></td>
-			</tr>
-		</table>
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript">
-			function openURL(url){
-				var win = window.open(url, '_blank');
-  				win.focus();
-			}
-
-			setInterval(function(){ 
-				window.location.href = "zingpoll://install?userid=1411&code=qwerty&pid=testcampaign";
-				
-				setTimeout(function() {
-    				if(confirm('You do not seem to have ZingPoll installed, do you want to go download it now?')){
-      					document.location = 'https://itunes.apple.com/us/app/zingpoll/id1076238279';
-    				}
-  				}, 300);
-			}, 3000);
+			setTimeout(function () { window.location = "https://itunes.apple.com/us/app/zingpoll/id1076238279"; }, 25);
+			window.location = "zingpoll://com.aavn.zingpoll/12345";
 		</script>
 	</body>
 </html>
